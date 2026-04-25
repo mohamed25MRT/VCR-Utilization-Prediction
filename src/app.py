@@ -13,7 +13,7 @@ st.set_page_config(page_title="VCR Utilization AI", layout="wide")
 # Cache the data so the app stays fast
 @st.cache_data
 def get_data_and_forecast():
-    Master_DFRDD = data_extract("C:/Users/DELL/projects/CS5998/RDD/")
+    Master_DFRDD = data_extract(FolderPath)
     model, model_features = Train_Model(Master_DFRDD)
     forecast_results = Week_prediction(model, Master_DFRDD, model_features)
     return Master_DFRDD, forecast_results
