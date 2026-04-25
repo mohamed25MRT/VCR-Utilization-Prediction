@@ -3,10 +3,12 @@
 #Import Libraries
 import streamlit as st
 import pandas as pd
+import os
 
 from Data_Processor import data_extract
 from Model_Train import Train_Model
 from Forecasts_Prediction import Week_prediction
+FolderPath = os.path.join(os.getcwd(), "Data") 
 
 st.set_page_config(page_title="VCR Utilization AI", layout="wide")
 
