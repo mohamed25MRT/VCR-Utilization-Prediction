@@ -1,8 +1,6 @@
 # VCR-Utilization-Prediction
 Predict Utilization of Cisco VCR Devices using XGBoost
 
-# VCR Utilization Prediction Engine
-
 ## Project Overview
 This project uses **XGBoost Machine Learning** to predict the weekly utilization of 1,000+ VCR devices. 
 
