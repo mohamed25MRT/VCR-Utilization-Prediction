@@ -86,7 +86,7 @@ def Train_Model(Master_DFRDD):
     plt.legend()
     plt.grid(True, alpha=0.3)
     
-    plt.savefig('Report_Plots/Actual vs. Predicted.png', dpi=300, bbox_inches='tight')
+    plt.savefig('outputs/Actual vs. Predicted.png', dpi=300, bbox_inches='tight')
     #plt.show()
     print("Saved: Actual vs. Predicted.png")
 ######################--------Visualization-------####################################################################
@@ -96,7 +96,7 @@ def Train_Model(Master_DFRDD):
     plt.title("Error Plot (Residual Value)", fontsize =15)
     plt.xlabel("Predicted Hours")
     plt.ylabel("Error = (Actual - Predicted)")
-    plt.savefig('Report_Plots/Error Plot.png', dpi=300, bbox_inches='tight')
+    plt.savefig('outputs/Error Plot.png', dpi=300, bbox_inches='tight')
     #plt.show()
     print("Saved: Error Plot.png.png")
 
