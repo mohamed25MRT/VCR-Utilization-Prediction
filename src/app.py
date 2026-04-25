@@ -3,7 +3,6 @@
 #Import Libraries
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 
 from Data_Processor import data_extract
 from Model_Train import Train_Model
