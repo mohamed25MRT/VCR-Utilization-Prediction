@@ -2,20 +2,21 @@
 
 #Import Libraries
 import pandas as pd
+import os
 
 #Function Calls
 from Data_Processor import data_extract
 from Model_Train import Train_Model
 from Forecasts_Prediction import Week_prediction
 from Visualizer import Visualization_Plot
-#FolderPath = "C:/Users/DELL/projects/CS5998/RDD" 
+FolderPath = os.path.join(os.getcwd(), "Data") 
 
 def VCR_Util_pipeline():
     print("---Starting Cisco VCR Utilization Pipeline ---")
     
     # 1. Import, Extract and Perform Feature Modeling (Create The Master Data Frame)
     print("### Step 1: Loading and processing weekly Utilization data...")
-    Master_DFRDD = data_extract("C:/Users/DELL/projects/CS5998/RDD")
+    Master_DFRDD = data_extract(FolderPath)
     print(f"Loaded {len(Master_DFRDD)} rows across {Master_DFRDD['Assigned To'].nunique()} devices.")
     print("Master_DFRDD Columns : ", Master_DFRDD.columns.tolist())
     
