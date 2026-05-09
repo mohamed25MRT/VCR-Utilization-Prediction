@@ -37,7 +37,9 @@ This project uses **XGBoost Machine Learning** to predict the weekly utilization
 1.**Clone the repository:**
    git clone [https://github.com/mohamed25MRT/VCR-Utilization-Prediction.git](https://github.com/mohamed25MRT/VCR-Utilization-Prediction)
    cd VCR-Utilization-Prediction
+   
 2. Install dependencies: pip install -r requirements.txt
+   
 3. Dashboard: streamlit run app.py
 
 **## How to RunDashboard Features** 
