@@ -6,6 +6,9 @@ numpy
 xgboost
 scikit-learn
 
+# Deep Learning (Sequential)
+tensorflow>=2.10.0
+
 # Visualization & UI
 streamlit
 matplotlib
