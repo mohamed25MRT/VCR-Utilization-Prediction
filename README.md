@@ -35,6 +35,7 @@ This project uses **XGBoost Machine Learning** to predict the weekly utilization
 
 ## How to Run
 1.**Clone the repository:**
+
    git clone [https://github.com/mohamed25MRT/VCR-Utilization-Prediction.git](https://github.com/mohamed25MRT/VCR-Utilization-Prediction)
    cd VCR-Utilization-Prediction
    
@@ -42,14 +43,23 @@ This project uses **XGBoost Machine Learning** to predict the weekly utilization
    
 3. Dashboard: streamlit run app.py
 
-**## How to RunDashboard Features** 
+**## How to RunDashboard Features**
+
 **Device Selection**: Interactive lookup for any device in the 1,000+ fleet.
+
 **Model Comparison**: Side-by-side visualization of XGBoost vs. RNN predictions.
+
 **Global Metrics**: Real-time tracking of MAE and RMSE across the entire fleet
 
+
 **Project Structure**
+
 Data_Processor.py: Ingestion and cleaning of 40+ raw CSV logs.
+
 main.py: Training and evaluation of the XGBoost baseline.
+
 mainRNN.py: Implementation of the Encoder-Decoder LSTM architecture.
+
 app.py: Streamlit-based visual reporting dashboard.
+
 Other files..
